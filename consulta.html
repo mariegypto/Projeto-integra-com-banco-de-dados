@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Consulta</title>
+    <meta charset="UTF-8">
+    <!--<link rel="stylesheet" href="css/form.css" />-->
+    <style>
+        html,
+         :root {
+            height: 100%;
+        }
+        
+        input {
+            box-sizing: border-box;
+            outline: none;
+        }
+        
+        body {
+            background: linear-gradient(180deg, #c33156, #a81137 100%);
+            background-size: 100%;
+            margin: 0;
+            height: 100%;
+            font-family: "Open Sans", sans-serif;
+            font-size: 14px;
+        }
+        
+        .wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        
+        #formulario {
+            width: 500px;
+            min-height: 150px;
+            background: #fff;
+            border-radius: 6px;
+            padding: 20px 30px;
+        }
+        
+        #formulario legend {
+            color: #c33156;
+            font-weight: bold;
+            text-align: center;
+            margin: 5px 0;
+            font-size: 22px;
+        }
+        
+        .input-group {
+            margin: 10px 0;
+        }
+        
+        .input-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+            color: #393939;
+            cursor: pointer;
+        }
+        
+        .input-group input:not([type="checkbox"]) {
+            background: #f3e5eb;
+            border: 1px solid #f771ba;
+            border-radius: 2px;
+            padding: 8px 10px;
+            display: block;
+            width: 100%;
+        }
+        
+        .input-group input:focus {
+            border-color: #4020b2;
+        }
+        
+        .input-group input::placeholder {
+            color: #620031;
+            font-weight: 300;
+        }
+        
+        .colunas {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .colunas .input-group {
+            width: 48%;
+        }
+        
+        .footer {
+            text-align: center;
+        }
+        
+        .botao {
+            background: #E72B6A;
+            border-radius: 2px;
+            padding: 10px 15px;
+            border: none;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .botao:hover {
+            background: #5988bd;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action="consulta.php" id="formulario" method="GET">
+            <legend>
+                Consultar...
+            </legend>
+            <div class="input-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Insira um nome" />
+            </div>
+            <div class="footer">
+                <button type="submit" class="botao">
+            Consultar
+        </button>
+                <button type="reset" class="botao">
+            Limpar
+        </button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

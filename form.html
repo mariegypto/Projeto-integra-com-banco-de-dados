@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Cadastro | Biblioteca</title>
+    <link rel="stylesheet" href="css/form.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Formulário -->
+        <form action="insere_form.php" id="formulario" method="POST" name="formulario">
+            <legend>
+                Cadastro Biblioteca
+            </legend>
+            <div class="input-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Insira seu nome" />
+            </div>
+            <div class="input-group">
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" id="sobrenome" name="sobrenome" placeholder="Insira seu sobrenome" />
+            </div>
+            <div class="input-group">
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" name="cpf" placeholder="Insira seu CPF" />
+            </div>
+            <div class="input-group">
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep" placeholder="Insira seu CEP" />
+            </div>
+            <div class="input-group">
+                <label for="endereco">Endereço::</label>
+                <input type="text" id="endereco" name="endereco" placeholder="Insira seu endereço" />
+            </div>
+            <div class="input-group">
+                <label for="numero">Número:</label>
+                <input type="text" id="numero" name="numero" placeholder="Insira o número" />
+            </div>
+            <div class="input-group">
+                <label for="complemento">Complemento:</label>
+                <input type="text" id="complemento" name="complemento" placeholder="Insira o complemento" />
+            </div>
+            <div class="input-group">
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" name="bairro" placeholder="Insira o bairro" />
+            </div>
+            <div class="input-group">
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade" placeholder="Insira a cidade" />
+            </div>
+            <div class="input-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Insira seu e-mail" />
+            </div>
+
+            <div class="input-group">
+                <label for="data_nascimento">Data de nascimento:</label>
+                <input type="date" id="data_nascimento" name="data_nascimento" placeholder="Insira sua data de nascimento" />
+            </div>
+            <div class="input-group">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" placeholder="Insira a senha" />
+            </div>
+            <div class="colunas">
+                <div class="input-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" id="telefone" name="telefone" placeholder="Insira seu Telefone" />
+                </div>
+            </div>
+            <div class="colunas">
+                <div class="input-group">
+                    <label for="sexo">Sexo:</label>
+                    <select name="sexo" id="sexo">
+              <option value="">informar...</option>
+              <option value="m">Masculino</option>
+              <option value="f">Feminino</option>
+              <option value="x">Não informar</option>
+            </select>
+                </div>
+                <div class="input-group">
+                    <label for="newsletter">Newsletter</label>
+                    <input type="checkbox" id="newsletter" name="newsletter" />
+                    <small>Desejo receber novidades</small>
+                </div>
+            </div>
+            <div class="footer">
+                <button type="button" class="botao" onclick="validar()">
+            Enviar
+          </button>
+            </div>
+        </form>
+
+        <script>
+            /* Função Validar */
+            function validar() {
+                // pegando o valor do nome pelos names
+                var nome = document.getElementById("nome");
+                var sobrenome = document.getElementById("sobrenome");
+                var cpf = document.getElementById("cpf");
+                var cep = document.getElementById("cep");
+                var endereco = document.getElementById("endereco");
+                var numero = document.getElementById("numero");
+                var complemento = document.getElementById("complemento");
+                var bairro = document.getElementById("bairro");
+                var cidade = document.getElementById("cidade");
+                var email = document.getElementById("email");
+                var senha = document.getElementById("senha");
+                var data = document.getElementById("data_nascimento");
+                var telefone = document.getElementById("telefone");
+                var sexo = document.getElementById("sexo");
+
+                // verificar se o nome está vazio
+
+                if (nome.value == "") {
+                    alert("Nome não informado");
+                    // Deixa o input com o focus
+                    nome.focus();
+                    // retorna a função e não olha as outras linhas
+                    return;
+                }
+                if (sobrenome.value == "") {
+                    alert("Sobrenome não informado");
+                    sobrenome.focus();
+                    return;
+                }
+                if (cpf.value == "") {
+                    alert("CPF não informado");
+                    cpf.focus();
+                    return;
+                }
+                if (cep.value == "") {
+                    alert("CEP não informado");
+                    cep.focus();
+                    return;
+                }
+                if (endereco.value == "") {
+                    alert("Endereço não informado");
+                    endereco.focus();
+                    return;
+                }
+                if (numero.value == "") {
+                    alert("Número não informado");
+                    numero.focus();
+                    return;
+                }
+                if (complemento.value == "") {
+                    alert("Complemento não informado");
+                    complemento.focus();
+                    return;
+                }
+                if (bairro.value == "") {
+                    alert("Bairro não informado");
+                    bairro.focus();
+                    return;
+                }
+                if (cidade.value == "") {
+                    alert("Cidade não informada");
+                    cidade.focus();
+                    return;
+                }
+                if (email.value == "") {
+                    alert("E-mail não informado");
+                    email.focus();
+                    return;
+                }
+                if (senha.value == "") {
+                    alert("Senha não informada");
+                    senha.focus();
+                    return;
+                }
+                if (data_nascimento.date == "") {
+                    alert("Data de nascimento não informada");
+                    data.focus();
+                    return;
+                }
+                if (telefone.value == "") {
+                    alert("Telefone não informado");
+                    telefone.focus();
+                    return;
+                }
+
+                if (sexo.value == "") {
+                    alert("sexo não informado");
+                    sexo.focus();
+                    return;
+                }
+
+                alert("Formulário enviado!");
+                formulario.submit();
+
+                // envia o formulário
+
+            }
+        </script>
+    </div>
+</body>
+
+</html>
