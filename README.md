@@ -7,6 +7,28 @@ Link para acessar: http://aula-marianaegypto.cf/
 Usuários e senhas disponíveis: 
 User: mariana Senha: 12345678
 User: emerson Senha: emerson123
+User: bercraftergamer Senha: batatinhafrita
+
+Nomes disponíveis para consulta:
+Mariana
+José
+Gabriela
+Bernardo
+Manuel
+Joana
+Leila
+Matheus
+Yasmin
+Hugo
+Fabiana 
+Wallace
+Cintia
+Guilherme
+João Guilherme
+Adilson roberto
+Emerson
+
+⚠️ Para consultar todos os nomes armazenados na tabela, é só deixar a barra em branco e clicar em consultar.
 
 O projeto por enquanto não conta ainda com a associação de cadastro com Login mas pretendo alterar isso em breve.
 
